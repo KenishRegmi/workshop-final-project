@@ -1,0 +1,151 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  background-color: orange;
+  height: 65px;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-top: -8px;
+  position: sticky;
+}
+.nav-items{
+  list-style: none;
+  display: flex;
+}
+.nav-items li{
+  padding-right: 80px;
+  padding-top: 10px;
+}
+.nav-items li a{
+  text-decoration: none;
+  color: white;
+}
+.nav-logo{
+  padding-left: 20px;
+  color: white;
+}
+.row-left{
+  margin-left: 50px;
+}
+.row-1{
+  display:flex ;
+
+}
+.first-container{
+  margin-right: 50px;
+}
+.second-container{
+  padding-left: 60px;
+}
+.third-container
+{
+  margin-top: 30px;
+  margin-left:50px ;
+}
+.mind{
+width: 75%;
+height: 200px;
+border-radius: 16px;
+}
+.contact{
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.phone img{
+  width: 20px;
+  height: 20px;
+}
+.phone{
+  display: flex;
+  margin-top: -10px;
+}
+.phoneimg{
+  margin-top: 14px;
+  margin-left: 4px;
+  padding-left: 4px;
+}
+label{
+  font-size: 120%;
+}
+.row-1 input{
+  width: 200px;
+  height: 20px;
+  border-radius: 4px;
+}
+.sbmt{
+  width: 90px;
+  height: 30px;
+  margin-left: 220px;
+  border-radius: 4px;
+  background-color: purple;
+  color: white;
+  border-radius: 4px;
+  font-size: 110%;
+}
+.email img{
+  width: 20px;
+  height: 20px;
+}
+.email{
+  display: flex;
+  margin-top: -10px;
+}
+.contact-title{
+  font-size: 300%;
+}
+.contact-us-right{
+  margin-top: -30px;
+}
+.contact-us-right-container{
+  margin-top: -10px;
+}
+foot-main{
+  background-color: #f0f0f0;
+  margin-top: 50px;
+}
+footer{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.footer-col-one button{
+  color: white;
+  background-color: purple;
+  width: 100px;
+  height: 20px;
+}
+.footer-col-four img{
+  width: 40px;
+  height: 40px;
+  padding: 15px;
+}
+.foot-items{
+  list-style: none;
+  margin-top: -18px;
+}
+.foot-items li a{
+  text-decoration: none;
+  color: black;
+
+}
+.foot-items li{
+  padding-top: 15px;
+}
+.enter{
+  width: 100%;
+  height: 20px;
+}
+.subs{
+  margin-top: 10px;
+  
+}
+.foot-para{
+  text-align: center;
+  padding-top: 10px;
+}

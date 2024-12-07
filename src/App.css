@@ -408,7 +408,6 @@ padding: 40px;
   margin-right: auto;
 }
 
-/* Left Section: Quiz Start Options */
 .quiz-start-section {
   background-color: #f9f9f9;
   padding: 20px;
@@ -559,4 +558,85 @@ background-color: white;
 
 .app  h2 {
   margin-bottom: 10px;
+}
+/* Container for Streak and Leaderboard */
+.quiz-streak-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Streak Section */
+.quiz-streak-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.quiz-streak-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.quiz-streak-number {
+  font-size: 2rem;
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* Leaderboard Section */
+.quiz-leaderboard-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-leaderboard-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.quiz-leaderboard-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quiz-leaderboard-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+}
+
+.quiz-leaderboard-item .quiz-rank {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.quiz-leaderboard-item .quiz-player {
+  color: #333;
+}
+
+.quiz-leaderboard-item .quiz-streak {
+  font-weight: bold;
+  color: #28a745;
+}
+
+.quiz-leaderboard-item.your-rank {
+  background-color: #d4edda;
+  border-left: 5px solid #28a745;
 }

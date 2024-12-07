@@ -1,44 +1,38 @@
 import React, { useState } from "react";
 
-
-function Question() {
-  // Questions Array
+function Question({ onQuizEnd }) {
   const questions = [
-    
-      {
-        questionText: "What is the color of the sky?",
-        options: ["Red", "Blue", "Green", "Yellow"],
-        correctAnswer: "Blue",
-      },
-      {
-        questionText: "How many legs does a spider have?",
-        options: ["4", "6", "8", "10"],
-        correctAnswer: "8",
-      },
-      {
-        questionText: "What do plants need to make food?",
-        options: ["Water", "Sunlight", "Air", "All of the above"],
-        correctAnswer: "All of the above",
-      },
-      {
-        questionText: "Which part of the plant grows underground?",
-        options: ["Stem", "Leaf", "Root", "Flower"],
-        correctAnswer: "Root",
-      },
-      {
-        questionText: "How many seasons are there in a year?",
-        options: ["2", "3", "4", "5"],
-        correctAnswer: "4",
-      },
-    
+    {
+      questionText: "What is the color of the sky?",
+      options: ["Red", "Blue", "Green", "Yellow"],
+      correctAnswer: "Blue",
+    },
+    {
+      questionText: "How many legs does a spider have?",
+      options: ["4", "6", "8", "10"],
+      correctAnswer: "8",
+    },
+    {
+      questionText: "What do plants need to make food?",
+      options: ["Water", "Sunlight", "Air", "All of the above"],
+      correctAnswer: "All of the above",
+    },
+    {
+      questionText: "Which part of the plant grows underground?",
+      options: ["Stem", "Leaf", "Root", "Flower"],
+      correctAnswer: "Root",
+    },
+    {
+      questionText: "How many seasons are there in a year?",
+      options: ["2", "3", "4", "5"],
+      correctAnswer: "4",
+    },
   ];
 
-  // States to track progress and score
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
 
-  // Handle answer selection
   const handleAnswer = (selectedOption) => {
     if (selectedOption === questions[currentQuestion].correctAnswer) {
       setScore(score + 1);
@@ -49,14 +43,8 @@ function Question() {
       setCurrentQuestion(nextQuestion);
     } else {
       setShowScore(true);
+      onQuizEnd(score + 1, questions.length); // Notify parent with final results
     }
-  };
-
-  // Restart the quiz
-  const handleRestart = () => {
-    setCurrentQuestion(0);
-    setScore(0);
-    setShowScore(false);
   };
 
   return (
@@ -66,7 +54,6 @@ function Question() {
           <h1>
             You scored {score} out of {questions.length}
           </h1>
-          <button onClick={handleRestart}>Restart Quiz</button>
         </div>
       ) : (
         <div className="question-section">

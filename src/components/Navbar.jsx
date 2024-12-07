@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
+    <div className="nav-main">
     <div className="navbar">
         <h2 className="nav-logo">
             Learn With Fun
@@ -19,6 +20,7 @@ const Navbar = () => {
            </div>
            </div>
         </ul>
+    </div>
     </div>
   )
 }

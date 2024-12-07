@@ -10,7 +10,7 @@ const Footer = () => {
 Dont miss any updates from us. <br />Subscribe to our newsletter and stay up to date
         </p>
         <input type="text" className="enter" placeholder="Enter your email" />
-        <button className="subs">Subscribe</button>
+        <button className="subs" id="sub">Subscribe</button>
       </div>
       <div className="footer-col-two">
         <h1>Download</h1>

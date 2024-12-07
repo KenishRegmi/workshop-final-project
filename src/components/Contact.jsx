@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Contact = () => {
   return (
+    <div className="contact-main">
     <div className='contact'>
       <div className="contact-us-left">
         <div className="row-left">
@@ -49,17 +50,18 @@ const Contact = () => {
       </div>
       </div>
       <div className="email">
-            <p>Email:teamak@gmail.com</p>
+            <p>Email: teamak@gmail.com</p>
             <div className="phoneimg">
       <img src="https://cdn-icons-png.flaticon.com/128/542/542689.png" alt="" />
       </div>
       </div>
       <div className="email">
-            <p>Location:Pokhara-32,Rajakochauta</p>
+            <p>Location: Pokhara-32,Rajakochauta</p>
             
       </div>
       </div>
 </div>
+    </div>
     </div>
   )
 }

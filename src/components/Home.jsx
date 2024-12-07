@@ -31,23 +31,23 @@ const Home = () => {
                <div class="courses">
   <div class="course-card">
     <div class="image-wrapper">
-<img src="" alt="" />  
+<img src="./public/mgames2.jpg" alt="" />  
     </div>
     <div class="course-info">
       <h3>Rocket Launch</h3>
       <p>Rocket Launch  
       Embark on an exciting journey through a virtual world filled with puzzles, quizzes, and challenges that test and enhance  </p>
-      <button class="enroll-button">Enroll course</button>
+      <button class="enroll-button">Lets Play</button>
     </div>
   </div>
   <div class="course-card">
     <div class="image-wrapper">
-<img src="" alt="" />
+<img src="./public/mgames1.jpg" alt="" />
     </div>
     <div class="course-info">
       <h3>Jump Ladder</h3>
-      <p>**Jump Ladder** is an engaging educational game designed to make learning fun and interactive! Players climb a virtual ladder by solving problems. </p>
-      <button class="enroll-button">Enroll course</button>
+      <p>Jump Ladder is an engaging educational game designed to make learning fun and interactive! Players climb a virtual ladder by solving problems. </p>
+      <button class="enroll-button">Lets play</button>
     </div>
   </div>
 </div>
@@ -64,28 +64,63 @@ const Home = () => {
                <div class="courses">
   <div class="course-card">
     <div class="image-wrapper">
-<img src="" alt="" />  
+<img src="./public/math.png" alt="" />  
     </div>
     <div class="course-info">
-      <h3>Rocket Launch</h3>
-      <p>Rocket Launch  
-      Embark on an exciting journey through a virtual world filled with puzzles, quizzes, and challenges that test and enhance  </p>
-      <button class="enroll-button">Enroll course</button>
+      <h3>Math Quiz</h3>
+      <p>Engage in a fun, interactive math quiz designed to challenge problem-solving skills, improve accuracy, and make learning enjoyable!  </p>
+      <button class="enroll-button">Lets play</button>
     </div>
   </div>
   <div class="course-card">
     <div class="image-wrapper">
-<img src="" alt="" />
+<img src="./public/science.png" alt="" />
     </div>
     <div class="course-info">
-      <h3>Jump Ladder</h3>
-      <p>**Jump Ladder** is an engaging educational game designed to make learning fun and interactive! Players climb a virtual ladder by solving problems. </p>
-      <button class="enroll-button">Enroll course</button>
+      <h3>Science Quiz</h3>
+      <p>Explore the wonders of science with an exciting quiz to test knowledge, spark curiosity, and enhance learning for all!</p>
+      <button class="enroll-button">Lets play</button>
     </div>
   </div>
 </div>
                </div>
         </div>
+        
+        
+    </div>
+    <div className="home-second-container">
+        <div className="home-second-child">
+        <h2 className="game">Most Popular Puzzles</h2>
+        <button className='vgame'>View all</button>
+        </div>  
+        <div className="home-second-game">
+               <div className="second-game-child1">
+               <div class="courses">
+  <div class="course-card">
+    <div class="image-wrapper">
+<img src="./public/puzz1.png" alt="" />  
+    </div>
+    <div class="course-info">
+      <h3>Math Puzzle</h3>
+      <p>Engage in a fun, interactive math puzzle designed to challenge problem-solving skills, improve accuracy, and make learning enjoyable!  </p>
+      <button class="enroll-button">Lets Go</button>
+    </div>
+  </div>
+  <div class="course-card">
+    <div class="image-wrapper">
+<img src="./public/periodic.jpg" alt="" />
+    </div>
+    <div class="course-info">
+      <h3>Science Puzzle</h3>
+      <p>Fill all the element in the periodic table to win the game. Be the best and get the highest score!. Remember all the elements in the table.</p>
+      <button class="enroll-button">Lets Go</button>
+    </div>
+  </div>
+</div>
+               </div>
+        </div>
+        
+        
     </div>
 </div>
   )

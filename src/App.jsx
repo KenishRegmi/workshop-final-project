@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import Aboutus from "./components/Aboutus";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -15,7 +16,7 @@ function App() {
         <Route path="/" element={<div><Home/></div>} />
         <Route path="/games" element={<div>games</div>} />
         <Route path="/quizes" element={<div>games</div>} />
-        <Route path="/aboutus" element={<div>about us</div>} />
+        <Route path="/aboutus" element={<div><Aboutus /></div>} />
         <Route path="/contact" element={<div><Contact/></div>} />
         <Route path="/account" element={<div>This is account dropdown</div>} />
       </Routes>

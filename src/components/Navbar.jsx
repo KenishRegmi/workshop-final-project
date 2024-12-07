@@ -12,6 +12,12 @@ const Navbar = () => {
             <li><Link to={'./quizes'}><a href="">Quizes</a></Link></li>
             <li><Link to={'./aboutus'}><a href="">About us</a></Link></li>
             <li><Link to ={'./contact'}><a href="">Contact</a></Link></li>
+           <div className="dropdown"> <li><Link to ={'./account'}><a href=""> <button className='dropbtn'>Account</button></a></Link></li>
+           <div className="dropdown-content">
+            <a href="#">SignIn</a>
+            <a href="#">SignUp</a>
+           </div>
+           </div>
         </ul>
     </div>
   )

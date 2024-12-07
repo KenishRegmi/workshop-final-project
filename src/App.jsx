@@ -2,6 +2,7 @@ import { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
+import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 function App() {
@@ -11,11 +12,12 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<div>This is home page</div>} />
+        <Route path="/" element={<div><Home/></div>} />
         <Route path="/games" element={<div>games</div>} />
         <Route path="/quizes" element={<div>games</div>} />
         <Route path="/aboutus" element={<div>about us</div>} />
         <Route path="/contact" element={<div><Contact/></div>} />
+        <Route path="/account" element={<div>This is account dropdown</div>} />
       </Routes>
       <Footer />
     </BrowserRouter>

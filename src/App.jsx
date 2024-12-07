@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Aboutus from "./components/Aboutus";
 import Games from "./components/Games";
 import Quizes from "./components/Quizes";
+import Question from "./components/Question";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -23,6 +24,7 @@ function App() {
         <Route path="/contact" element={<div><Contact/></div>} />
         <Route path="/account" element={<div>This is account dropdown</div>} />
       </Routes>
+     
       <Footer />
     </BrowserRouter>
   );

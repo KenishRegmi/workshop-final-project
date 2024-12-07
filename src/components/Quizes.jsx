@@ -1,4 +1,5 @@
 import React from 'react'
+import Question from './Question'
 
 const Quizes = () => {
   return (
@@ -46,7 +47,7 @@ const Quizes = () => {
         </select>
       </div>
 
-      <button type="button" class="quiz-start-button">Start Quiz</button>
+      <button  onClick={<Question/>}  type="button" class="quiz-start-button">Start Quiz</button>
     </form>
   </section>
 
@@ -71,6 +72,7 @@ const Quizes = () => {
     </ul>
   </aside>
 </div>
+<Question/>
 </div>
 
   )

@@ -506,3 +506,57 @@ padding: 40px;
 .quiz-performance-list li strong {
   color: #007bff;
 }
+.app {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(rgb(81, 190, 230),white);
+
+  color: #333;
+}
+
+.app .question-section {
+  box-shadow:  0px 10px 28px rgba(0, 0, 0, 0.3);
+  width:400px;
+background-color: white;
+  text-align: center;
+  border-radius: 20px;
+  padding:50px;
+}
+
+.app  .options {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.app  button {
+  margin: 8px 0;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.app  button:hover {
+  background-color: #0056b3;
+}
+
+.app  .score-section {
+  text-align: center;
+}
+
+.app  h1 {
+  margin-bottom: 20px;
+}
+
+.app  h2 {
+  margin-bottom: 10px;
+}

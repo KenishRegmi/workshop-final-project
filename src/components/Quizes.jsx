@@ -2,36 +2,34 @@ import React, { useState } from "react";
 import Question from "./Question";
 
 const Quizes = () => {
-  const [quizStarted, setQuizStarted] = useState(false);5
+  const [quizStarted, setQuizStarted] = useState(false);
   const [streak, setStreak] = useState(0);
   const [leaderboard, setLeaderboard] = useState([
-    { name: "Alice", streak: 5 },
-    { name: "Bob", streak: 5 },
-    { name: "Charlie", streak: 4 },
+    { name: "Alice", streak: 15 },
+    { name: "Bob", streak: 12 },
+    { name: "Charlie", streak: 10 },
     { name: "You", streak: 0 },
-  ]);5
+  ]);
   const [previousPerformances, setPreviousPerformances] = useState([
     { topic: "Math", difficulty: "Medium", score: 85, date: "Dec 5, 2024" },
     { topic: "Science", difficulty: "Hard", score: 70, date: "Dec 3, 2024" },
     { topic: "History", difficulty: "Easy", score: 95, date: "Nov 30, 2024" },
-  ]);5
+  ]);
 
   const handleStartQuiz = () => {
-    setQuizStarted(true);5
+    setStreak(0);
+    setQuizStarted(true);
   };
 
   const updateStreakAndLeaderboard = (correctCount) => {
-    const newStreak = streak + correctCount;5
+    const newStreak = correctCount;
     setStreak(newStreak);
-
- 5
     const updatedLeaderboard = [...leaderboard].map((player) => {
       if (player.name === "You") {
         return { ...player, streak: newStreak };
       }
       return player;
     });
-
 
     updatedLeaderboard.sort((a, b) => b.streak - a.streak);
     setLeaderboard(updatedLeaderboard);
@@ -129,20 +127,19 @@ const Quizes = () => {
             </section>
 
             <aside className="quiz-performance-section">
-  <h2 className="quiz-performance-title">Your Previous Performances</h2>
-  <ul className="quiz-performance-list">
-    {previousPerformances.slice(0, 4).map((performance, index) => (
-      <li key={index}>
-        <strong>Quiz:</strong> {performance.topic} ({performance.difficulty})
-        <br />
-        <strong>Score:</strong> {performance.score}%
-        <br />
-        <strong>Date:</strong> {performance.date}
-      </li>
-    ))}
-  </ul>
-</aside>
-
+              <h2 className="quiz-performance-title">Your Previous Performances</h2>
+              <ul className="quiz-performance-list">
+                {previousPerformances.slice(0, 5).map((performance, index) => (
+                  <li key={index}>
+                    <strong>Quiz:</strong> {performance.topic} ({performance.difficulty})
+                    <br />
+                    <strong>Score:</strong> {performance.score}%
+                    <br />
+                    <strong>Date:</strong> {performance.date}
+                  </li>
+                ))}
+              </ul>
+            </aside>
           </div>
 
           <div className="quiz-streak-container">

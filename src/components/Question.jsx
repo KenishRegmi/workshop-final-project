@@ -43,7 +43,7 @@ function Question({ onQuizEnd }) {
       setCurrentQuestion(nextQuestion);
     } else {
       setShowScore(true);
-      onQuizEnd(score + 1, questions.length); // Notify parent with final results
+      onQuizEnd(score + 1, questions.length); 
     }
   };
 

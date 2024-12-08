@@ -22,7 +22,6 @@ function App() {
         <Route path="/quizes" element={<div><Quizes /></div>} />
         <Route path="/aboutus" element={<div><Aboutus /></div>} />
         <Route path="/contact" element={<div><Contact/></div>} />
-        <Route path="/account" element={<div>This is account dropdown</div>} />
       </Routes>
      
       <Footer />

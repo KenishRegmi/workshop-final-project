@@ -8,22 +8,28 @@ import Contact from "./components/Contact";
 import Aboutus from "./components/Aboutus";
 import Games from "./components/Games";
 import Quizes from "./components/Quizes";
-import Question from "./components/Question";
+import MathBlaster from "./components/MathBlaster"; // Import the MathBlaster component
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [leaderboard, setLeaderboard] = useState([]);
+
+  // Function to update the leaderboard
+  const handleUpdateLeaderboard = (score) => {
+    const newLeaderboard = [...leaderboard, { player: "Player 1", score }];
+    setLeaderboard(newLeaderboard);
+  };
 
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<div><Home/></div>} />
-        <Route path="/games" element={<div><Games /></div>} />
-        <Route path="/quizes" element={<div><Quizes /></div>} />
-        <Route path="/aboutus" element={<div><Aboutus /></div>} />
-        <Route path="/contact" element={<div><Contact/></div>} />
-   </Routes>
-     
+        <Route path="/" element={<Home />} />
+        <Route path="/games" element={<Games/>} />
+        <Route path="/quizes" element={<Quizes />} />
+        <Route path="/aboutus" element={<Aboutus />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/math" element={<MathBlaster />} />
+      </Routes>
       <Footer />
     </BrowserRouter>
   );

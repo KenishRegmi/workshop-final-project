@@ -131,8 +131,13 @@ const Home = () => {
                     challenge problem-solving skills, improve accuracy, and make
                     learning enjoyable!{" "}
                   </p>
-                  <button className="enroll-button">Lets Go</button>
-                </div>
+                  <Link
+                    to={{
+                      pathname: "/mathpuzzlegame",
+                    }}
+                  >
+                    <button className="enroll-button">Let's Play</button>
+                  </Link>                 </div>
               </div>
               <div className="course-card">
                 <div className="image-wrapper">

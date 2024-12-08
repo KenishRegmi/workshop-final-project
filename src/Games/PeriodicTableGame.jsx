@@ -23,7 +23,39 @@ const PeriodicTableGame = () => {
     { symbol: "Ar", name: "Argon" },
     { symbol: "K", name: "Potassium" },
     { symbol: "Ca", name: "Calcium" },
-    // Add more elements as needed
+    { symbol: "Sc", name: "Scandium" },
+    { symbol: "Ti", name: "Titanium" },
+    { symbol: "V", name: "Vanadium" },
+    { symbol: "Cr", name: "Chromium" },
+    { symbol: "Mn", name: "Manganese" },
+    { symbol: "Fe", name: "Iron" },
+    { symbol: "Co", name: "Cobalt" },
+    { symbol: "Ni", name: "Nickel" },
+    { symbol: "Cu", name: "Copper" },
+    { symbol: "Zn", name: "Zinc" },
+    { symbol: "Ga", name: "Gallium" },
+    { symbol: "Ge", name: "Germanium" },
+    { symbol: "As", name: "Arsenic" },
+    { symbol: "Se", name: "Selenium" },
+    { symbol: "Br", name: "Bromine" },
+    { symbol: "Kr", name: "Krypton" },
+    { symbol: "Rb", name: "Rubidium" },
+    { symbol: "Sr", name: "Strontium" },
+    { symbol: "Y", name: "Yttrium" },
+    { symbol: "Zr", name: "Zirconium" },
+    { symbol: "Nb", name: "Niobium" },
+    { symbol: "Mo", name: "Molybdenum" },
+    { symbol: "Tc", name: "Technetium" },
+    { symbol: "Ru", name: "Ruthenium" },
+    { symbol: "Rh", name: "Rhodium" },
+    { symbol: "Pd", name: "Palladium" },
+    { symbol: "Ag", name: "Silver" },
+    { symbol: "Cd", name: "Cadmium" },
+    { symbol: "In", name: "Indium" },
+    { symbol: "Sn", name: "Tin" },
+    { symbol: "Sb", name: "Antimony" },
+    { symbol: "I", name: "Iodine" },
+    { symbol: "Te", name: "Tellurium" }
   ];
 
   const [question, setQuestion] = useState("");
@@ -77,44 +109,44 @@ const PeriodicTableGame = () => {
 
   return (
     <div className="periodic">
-        <div className="periodic-main">
-      <h1 className="periodic-title">Periodic Table Game</h1>
-      {gameOver ? (
-        <div className="periodic-game-over">
-          <h2 className="periodic-subtitle">Game Over</h2>
-          <p className="periodic-text">Your final score: {score}</p>
-          <button className="periodic-button" onClick={() => window.location.reload()}>
-            Play Again
-          </button>
-        </div>
-      ) : (
-        <div>
-          <div className="periodic-score">
-            <p className="periodic-text">Score: {score}</p>
+      <div className="periodic-main">
+        <h1 className="periodic-title">Periodic Table Game</h1>
+        {gameOver ? (
+          <div className="periodic-game-over">
+            <h2 className="periodic-subtitle">Game Over</h2>
+            <p className="periodic-text">Your final score: {score}</p>
+            <button className="periodic-button" onClick={() => window.location.reload()}>
+              Play Again
+            </button>
           </div>
-          <div className="periodic-question-container">
-            <h2 className="periodic-subtitle">What is the element with the symbol "{question}"?</h2>
-            <div className="periodic-options-container">
-              {options.map((option, index) => (
-                <button
-                  key={index}
-                  className={`periodic-option-button ${
-                    userAnswer === option
-                      ? option === correctAnswer
-                        ? "periodic-correct"
-                        : "periodic-incorrect"
-                      : ""
-                  }`}
-                  onClick={() => handleAnswerSelect(option)}
-                >
-                  {option}
-                </button>
-              ))}
+        ) : (
+          <div>
+            <div className="periodic-score">
+              <p className="periodic-text">Score: {score}</p>
+            </div>
+            <div className="periodic-question-container">
+              <h2 className="periodic-subtitle">What is the element with the symbol "{question}"?</h2>
+              <div className="periodic-options-container">
+                {options.map((option, index) => (
+                  <button
+                    key={index}
+                    className={`periodic-option-button ${
+                      userAnswer === option
+                        ? option === correctAnswer
+                          ? "periodic-correct"
+                          : "periodic-incorrect"
+                        : ""
+                    }`}
+                    onClick={() => handleAnswerSelect(option)}
+                  >
+                    {option}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-      )}
-    </div>
+        )}
+      </div>
     </div>
   );
 };

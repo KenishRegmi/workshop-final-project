@@ -9,7 +9,7 @@
   }
   
   .periodic-main {
-    margin-top: 50px;
+    margin-top: 100px;
     background-color: white;
     padding: 30px;
     border-radius: 12px;
@@ -63,19 +63,7 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
-  
-  .periodic-option-button:hover {
-    background-color: #45a049;
-  }
-  
-  .periodic-option-button.periodic-correct {
-    background-color: #4CAF50;
-  }
-  
-  .periodic-option-button.periodic-incorrect {
-    background-color: #f44336;
-  }
-  
+ 
   .periodic-game-over {
     text-align: center;
   }

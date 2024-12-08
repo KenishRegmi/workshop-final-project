@@ -1,8 +1,7 @@
   
   .flag{
 
-margin-left:50px;
-justify-content: center;
+margin-left:60px;
     background-color: #ffffff;
     border-radius: 15px;
     padding: 20px;
@@ -16,6 +15,7 @@ justify-content: center;
   
   .flag-title {
     font-size: 2rem;
+    margin-left: 45%;
     margin-bottom: 20px;
     color: #2c3e50;
   }
@@ -23,7 +23,9 @@ justify-content: center;
   .flag-question {
     margin: 20px 0;
   }
-  
+  .flag-question img{
+    margin-left: 40%;
+  }
   .flag-emoji {
     font-size: 5rem;
   }

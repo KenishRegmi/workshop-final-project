@@ -107,18 +107,26 @@ function Question({ onQuizEnd }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
+  const [feedback, setFeedback] = useState(""); // Added state for feedback
 
   const handleAnswer = (selectedOption) => {
-    if (selectedOption === questions[currentQuestion].correctAnswer) {
+    const isCorrect = selectedOption === questions[currentQuestion].correctAnswer;
+    if (isCorrect) {
       setScore(score + 1);
+      setFeedback("Correct!"); // Show correct feedback
+    } else {
+      setFeedback("Incorrect!"); // Show incorrect feedback
     }
 
     const nextQuestion = currentQuestion + 1;
     if (nextQuestion < questions.length) {
-      setCurrentQuestion(nextQuestion);
+      setTimeout(() => {
+        setFeedback(""); // Clear feedback before showing next question
+        setCurrentQuestion(nextQuestion);
+      }, 1000); // Wait 1 second before showing the next question
     } else {
       setShowScore(true);
-      onQuizEnd(score + 1, questions.length); 
+      onQuizEnd(score + (isCorrect ? 1 : 0), questions.length); // Pass updated score
     }
   };
 
@@ -143,6 +151,7 @@ function Question({ onQuizEnd }) {
               </button>
             ))}
           </div>
+          {feedback && <p className="feedback">{feedback}</p>} {/* Display feedback */}
         </div>
       )}
     </div>

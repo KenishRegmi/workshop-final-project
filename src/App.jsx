@@ -11,6 +11,7 @@ import Quizes from "./components/Quizes";
 import MathBlaster from "./Games/MathBlaster";
 import MemoryTest from "./Games/MemoryTest"
 import FlagGuesser from "./Games/FlagGuesser";
+import PeriodicTableGame from "./Games/PeriodicTableGame";
 
 function App() {
 
@@ -26,6 +27,8 @@ function App() {
         <Route path="/math" element={<MathBlaster />} />
         <Route path="/memorytest" element={<MemoryTest />} />
         <Route path="/flagguesser" element={<FlagGuesser />} />
+        <Route path="/periodictablegame" element={<PeriodicTableGame />} />
+
 
       </Routes>
       <Footer />

@@ -13,8 +13,7 @@ const Home = () => {
             quizzes, and creative activities tailored for students from classes
             1 to 10. Designed to make learning fun and engaging, our platform
             helps students master concepts while enjoying the process. Teachers
-            can also access resources to enhance classroom experiences and
-            inspire young minds!"
+            can also access resources to enhance classroom experiences andinspire"
           </p>
           <div className="buttons">
             <button className="join">Join for free</button>
@@ -59,7 +58,7 @@ const Home = () => {
                   <p>
                   Math Blaster: A game where you solve questions in a given
                     period of time.I challenge you to get the 500+ score.Can you
-                    do it?
+                    do it?{" "}
                   </p>
                   <Link
                     to={{

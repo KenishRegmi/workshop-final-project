@@ -64,16 +64,6 @@
     padding: 20px;
     border-radius: 10px;
   }
-  
-  @media (max-width: 768px) {
-    .math-container {
-      padding: 10px;
-    }
-  
-    .math-title {
-      font-size: 2rem;
-    }
-  
     .math-subtitle {
       font-size: 1.5rem;
     }

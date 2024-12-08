@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .memory{
+    padding: 20px;
+  }
+  .memory-container{
+    margin-top: 100px;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff5722;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .card.flipped {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .card-back {
+    font-size: 20px;
+  }
+  
+  .game-over {
+    padding: 20px;
+  }
+  
+  .reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .reset-button:hover {
+    background-color: #e64a19;
+  }
+  

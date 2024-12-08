@@ -1,5 +1,5 @@
 import React from "react";
-import Question from "./Question";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -35,30 +35,39 @@ const Home = () => {
             <div className="courses">
               <div className="course-card">
                 <div className="image-wrapper">
-                  <img src="./public/mgames2.jpg" alt="" />
+                  <img src="./public/memory.jpg" alt="" />
                 </div>
                 <div className="course-info">
-                  <h3>Rocket Launch</h3>
+                  <h3>Memory Test</h3>
                   <p>
-                    Rocket Launch Embark on an exciting journey through a
-                    virtual world filled with puzzles, quizzes, and challenges
-                    that test and enhance{" "}
+                     Memory Test is engaging game to improve your memory.Lets see how good is your memory.Can you become the best among the rest?{" "}
                   </p>
-                  <button className="enroll-button">Lets Play</button>
-                </div>
+                  <Link
+                    to={{
+                      pathname: "/memorytest",
+                    }}
+                  >
+                    <button className="enroll-button">Let's Play</button>
+                  </Link>                </div>
               </div>
               <div className="course-card">
                 <div className="image-wrapper">
-                  <img src="./public/mgames1.jpg" alt="" />
+                  <img src="./public/blaster.jpg" alt="" />
                 </div>
                 <div className="course-info">
-                  <h3>Jump Ladder</h3>
+                  <h3>Math Blaster</h3>
                   <p>
-                    Jump Ladder is an engaging educational game designed to make
-                    learning fun and interactive! Players climb a virtual ladder
-                    by solving problems.{" "}
+                  Math Blaster: A game where you solve questions in a given
+                    period of time.I challenge you to get the 500+ score.Can you
+                    do it?{" "}
                   </p>
-                  <button className="enroll-button">Lets play</button>
+                  <Link
+                    to={{
+                      pathname: "/math",
+                    }}
+                  >
+                    <button className="enroll-button">Let's Play</button>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -6,6 +6,8 @@ const Contact = () => {
   const [lname, setLname] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
+  const [feedback, setFeedback] = useState("");
+
 
 
   const handlesubmit = async () => {
@@ -14,7 +16,7 @@ const Contact = () => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ fname, lname, phone, email }),
+      body: JSON.stringify({ fname, lname, phone, email ,feedback}),
     });
     const data = await response.json();
     console.log("response: ", response);
@@ -81,7 +83,9 @@ const Contact = () => {
             <p>
               <label htmlFor="">What do you have in your mind</label>
             </p>
-            <input type="text" name="" id="" className="mind" placeholder="" />
+            <input type="text" name="" id="" className="mind" placeholder=""
+             value={feedback}
+             onChange={(e) => setFeedback(e.target.value)} />
             <br />
             <br />
             <button className="sbmt" onClick={handlesubmit}>
@@ -97,6 +101,7 @@ const Contact = () => {
               If you have any questions, feedback, or need assistance, feel free
               to get in touch with us.
             </p>
+            <div className="icons-contact">
             <div className="phone">
               <p>Phone: +1234567890</p>
               <div className="phoneimg">
@@ -117,6 +122,7 @@ const Contact = () => {
             </div>
             <div className="email">
               <p>Location: Pokhara-32,Rajakochauta</p>
+            </div>
             </div>
           </div>
         </div>

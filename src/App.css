@@ -48,15 +48,16 @@ body{
 .third-container
 {
   margin-top: 30px;
-  margin-left:50px ;
+  margin-left:-40px ;
 }
 .contact-main{
   background: linear-gradient(rgb(81, 190, 230),white);
 }
 .mind{
 width: 75%;
-height: 200px;
+height: 100px;
 border-radius: 16px;
+font-size: larger;
 }
 .contact{
   display: grid;
@@ -88,7 +89,6 @@ label{
 .sbmt{
   width: 90px;
   height: 30px;
-  margin-left: 220px;
   border-radius: 4px;
   background-color: purple;
   color: white;
@@ -112,6 +112,9 @@ label{
 }
 .contact-us-right-container{
   margin-top: -10px;
+}
+.icons-contact{
+  margin-left: 300px;
 }
 .home-container{
   display: grid;

@@ -8,16 +8,11 @@ import Contact from "./components/Contact";
 import Aboutus from "./components/Aboutus";
 import Games from "./components/Games";
 import Quizes from "./components/Quizes";
-import MathBlaster from "./components/MathBlaster"; // Import the MathBlaster component
+import MathBlaster from "./Games/MathBlaster";
+import MemoryTest from "./Games/MemoryTest"
+import FlagGuesser from "./Games/FlagGuesser";
 
 function App() {
-  const [leaderboard, setLeaderboard] = useState([]);
-
-  // Function to update the leaderboard
-  const handleUpdateLeaderboard = (score) => {
-    const newLeaderboard = [...leaderboard, { player: "Player 1", score }];
-    setLeaderboard(newLeaderboard);
-  };
 
   return (
     <BrowserRouter>
@@ -29,6 +24,9 @@ function App() {
         <Route path="/aboutus" element={<Aboutus />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/math" element={<MathBlaster />} />
+        <Route path="/memorytest" element={<MemoryTest />} />
+        <Route path="/flagguesser" element={<FlagGuesser />} />
+
       </Routes>
       <Footer />
     </BrowserRouter>

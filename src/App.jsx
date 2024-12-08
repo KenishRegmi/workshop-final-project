@@ -22,8 +22,7 @@ function App() {
         <Route path="/quizes" element={<div><Quizes /></div>} />
         <Route path="/aboutus" element={<div><Aboutus /></div>} />
         <Route path="/contact" element={<div><Contact/></div>} />
-      </Routes>
-     
+   </Routes>     
       <Footer />
     </BrowserRouter>
   );

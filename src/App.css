@@ -27,7 +27,7 @@ body{
   color: white;
 }
 .nav-logo{
-  padding-left: 20px;
+  padding-left: 60px;
   color: white;
 }
 .row-left{
@@ -171,7 +171,7 @@ foot-main{
 footer{
   display: flex;
   justify-content: space-evenly;
-  box-shadow:  0px 0px 28px rgba(0, 0, 0, 0.3);
+  box-shadow:  0px 0px 5px rgba(0, 0, 0, 0.3);
 
 }
 .footer-col-one button{
@@ -225,22 +225,35 @@ footer{
   text-align: center;
   padding-top: 10px;
 }
+.about-main{
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(rgb(81, 190, 230),white);
+
+}
 .about{
+  
   display: grid;
   padding:40px;
   grid-template-columns: repeat(2,1fr);
-  background: linear-gradient(rgb(81, 190, 230),white);
-
+  gap:20px;
   color:black;
+
 }
 .about p{
   line-height: 22px;
 }
-.box{
-  padding:20px;
+.about .box{
+  padding:40px;
   justify-content: center;
   align-items: center;
-}
+  width:450px;
+  box-shadow: 0 0 px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  gap:20px;
+  border-radius: 20px;
+  margin-top:40px;
+} 
 footer{
   margin-top: 40px;
 }
@@ -639,4 +652,8 @@ background-color: white;
 .quiz-leaderboard-item.your-rank {
   background-color: #d4edda;
   border-left: 5px solid #28a745;
+}
+.game-container-1{
+  display: flex;
+  justify-content: space-evenly;
 }

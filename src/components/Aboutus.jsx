@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom'
 const AboutUs = () => {
   return (
     <div>
-      <div className="about"><div className="box1 box">
+      <div className="about-main">
+      <div className="about">
+        <div className="box1 box">
 <h1>LEARN WITH FUN!!</h1>  
 <p>Welcome to Learn with fun , where education meets fun! We’re here to help kids explore, learn, and grow through interactive activities and resources.Created by a team Ak, designers, and child development experts, we aim to make learning accessible and enjoyable for every child.Our vision is to foster curiosity, creativity, and critical thinking in every child by providing engaging learning tools.</p></div>
    <div className="box2 box">
@@ -21,6 +23,7 @@ const AboutUs = () => {
    <p>Age group (“For kids aged 7-16”)</p></div>
       </div>
       </div> 
+      </div>
   )
 }
 

@@ -59,7 +59,7 @@ const Home = () => {
                   <p>
                   Math Blaster: A game where you solve questions in a given
                     period of time.I challenge you to get the 500+ score.Can you
-                    do it?{" "}
+                    do it?
                   </p>
                   <Link
                     to={{

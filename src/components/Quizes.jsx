@@ -35,7 +35,12 @@ const Quizes = () => {
     setLeaderboard(updatedLeaderboard);
   };
 
-  const updatePreviousPerformances = (score, totalQuestions, topic = "General", difficulty = "Medium") => {
+  const updatePreviousPerformances = (
+    score,
+    totalQuestions,
+    topic = "General",
+    difficulty = "Medium"
+  ) => {
     const percentage = Math.round((score / totalQuestions) * 100);
     const date = new Date().toLocaleDateString("en-US", {
       year: "numeric",
@@ -127,11 +132,14 @@ const Quizes = () => {
             </section>
 
             <aside className="quiz-performance-section">
-              <h2 className="quiz-performance-title">Your Previous Performances</h2>
+              <h2 className="quiz-performance-title">
+                Your Previous Performances
+              </h2>
               <ul className="quiz-performance-list">
                 {previousPerformances.slice(0, 5).map((performance, index) => (
                   <li key={index}>
-                    <strong>Quiz:</strong> {performance.topic} ({performance.difficulty})
+                    <strong>Quiz:</strong> {performance.topic} (
+                    {performance.difficulty})
                     <br />
                     <strong>Score:</strong> {performance.score}%
                     <br />

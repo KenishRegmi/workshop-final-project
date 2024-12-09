@@ -14,6 +14,7 @@ import FlagGuesser from "./Games/FlagGuesser";
 import PeriodicTableGame from "./Games/PeriodicTableGame";
 import MathPuzzleGame from "./Puzzles/MathPuzzleGame";
 import SciencePuzzleGame from "./Puzzles/SciencePuzzleGame";
+import MathQuizGame from "./Quiz/MathQuizGame";
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
         <Route path="/periodictablegame" element={<PeriodicTableGame />} />
         <Route path="/mathpuzzlegame" element={<MathPuzzleGame />} />
         <Route path="/sciencepuzzlegame" element={<SciencePuzzleGame />} />
+        <Route path="/mathquizgame" element={<MathQuizGame />} />
 
       </Routes>
       <Footer />

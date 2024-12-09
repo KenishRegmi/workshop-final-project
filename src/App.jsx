@@ -13,6 +13,7 @@ import MemoryTest from "./Games/MemoryTest"
 import FlagGuesser from "./Games/FlagGuesser";
 import PeriodicTableGame from "./Games/PeriodicTableGame";
 import MathPuzzleGame from "./Puzzles/MathPuzzleGame";
+import SciencePuzzleGame from "./Puzzles/SciencePuzzleGame";
 
 function App() {
 
@@ -30,8 +31,7 @@ function App() {
         <Route path="/flagguesser" element={<FlagGuesser />} />
         <Route path="/periodictablegame" element={<PeriodicTableGame />} />
         <Route path="/mathpuzzlegame" element={<MathPuzzleGame />} />
-
-
+        <Route path="/sciencepuzzlegame" element={<SciencePuzzleGame />} />
 
       </Routes>
       <Footer />

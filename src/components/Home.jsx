@@ -27,8 +27,18 @@ const Home = () => {
       <div className="home-second-container">
         <div className="home-second-child">
           <h2 className="game">Most Popular Games</h2>
-          <button className="vgame">View all</button>
-        </div>
+          <Link
+                    to={{
+                      pathname: "/games",
+                    }}
+                  >
+                    <button
+                      className="vgame"
+                      onClick={() => handleUpdateLeaderboard(350)}
+                    >
+                      Viewall
+                    </button>
+                  </Link>        </div>
         <div className="home-second-game">
           <div className="second-game-child1">
             <div className="courses">
@@ -150,8 +160,13 @@ const Home = () => {
                     Be the best and get the highest score!. Remember all the
                     elements in the table.
                   </p>
-                  <button className="enroll-button">Lets Go</button>
-                </div>
+                  <Link
+                    to={{
+                      pathname: "/sciencepuzzlegame",
+                    }}
+                  >
+                    <button className="enroll-button">Let's Play</button>
+                  </Link>                </div>
               </div>
             </div>
           </div>
